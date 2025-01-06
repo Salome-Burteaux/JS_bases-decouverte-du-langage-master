@@ -11,43 +11,60 @@
 
         /* Section 1 */   
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+        var name = "Joe"; // je déclare une variable nommée name qui prend pour valeur Joe.
+        var city = 'London'; // je déclare une variable nommée city qui prend pour valeur London.
+        var age = 32; // je déclare une variable nommée age qui prend pour valeur 32.
+        var isRed = true; // je déclare une variable nommée isRed qui est un booléen et vérifie si la couleur est rouge ou non.
+        var isOld = age > 80; // je déclare une variable nommée isOld qui est un booléen et vérifie si l'âge est supérieur à 80.
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; // je déclare un tableau nommé PreviousJobs qui contient des chaînes de caractères.
 
+        // je déclare une fonction nommée info qui prend en paramètre height et weight
         function info(height, weight) {
+
+            // je crée une boucle ou je vérifie si height est supérieur à 180
             if (height > 180) {
                 console.log('Vous êtes grand');
             }
+
+            // je crée une boucle ou je vérifie si weight est inférieur à 0
             if (weight < 0) {
                 console.log('oups, there is a problem');
+
+            // je crée une boucle ou je vérifie aussi si weight est inférieur à 15    
             } else if ( weight < 15) {
                 console.log('Are you that slim ?')
+
+            // le "sinon" de ma boucle "si" qui renverra "Good !" si toutes les conditions des boucles ne sont pas remplies 
             } else {
                 console.log('Good !')
             }
         }
 
+        // j'appelle ma fonction info et lui passe deux chiffres en paramètres
         info(165, 45);
 
-        var myHeight = 175;
-        var myWeight = 86;
+        var myHeight = 175; // je déclare une variable nommée myHeight qui prend pour valeur 175.
+        var myWeight = 86; // je déclare une variable nommée myWeight qui prend pour valeur 86.
 
+        // j'appelle ma fonction info et lui passe 2 variables en paramètres
         info(myHeight, myWeight);
 
+        // j'appelle ma fonction info et lui passe une première variable à laquelle j'ajoute 15 et une deuxième à laquelle je soustrais 100 en paramètres, 
         info(myHeight + 15, myWeight - 100);
 
+        // je déclare une fonction toUpper qui prendra un paramètre
         function toUpper(variable) {
+            // cette fonction retournera la valeur de la variable en majuscule
             return variable.toUpperCase();
         }
 
+        // je déclare une variable upperName qui appela la fonction toUpper avec "name" en paramètre
         var upperName = toUpper(name);
 
+        // je crée une boucle "for" où j'initialise une variable "i" à zéro, cette boucle s'executera tant que "i" sera inférieur à 3 et "i" augmentera sa valeur de 1 à chaque boucle
         for (i = 0; i < 3; i = i + 1) {
+            // j'affiche la valeur "i" du tableau previousJob
             console.log(previousJobs[i]);
         }
 
