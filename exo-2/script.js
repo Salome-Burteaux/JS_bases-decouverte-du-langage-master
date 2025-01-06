@@ -11,7 +11,6 @@ let we = "c'est le week end !"
 let isTesting = true;
 
 
-
 function isWE(day, hour) {
 
         if (isTesting) {
@@ -42,9 +41,6 @@ function isWE(day, hour) {
             }
 
     }
-
-
-
 }
 
 isWE(today, actualHour)
