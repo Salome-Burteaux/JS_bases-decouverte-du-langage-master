@@ -8,11 +8,9 @@ var secretMessage = ["Learning", "isn't", "about", "what", "you", "get", "easily
 secretMessage.pop();
 console.log(secretMessage)
 
-
 // Utiliser une méthode pour ajouter les mots 'to' and 'program' comme des éléments distincts à la fin du tableau.
 secretMessage.push('to','program');
 console.log(secretMessage)
-
 
 // Changer le mot 'easily' par 'right' en accédant au bon index du tableau.
 let found = secretMessage.findIndex((element) => element === "easily");
@@ -22,7 +20,6 @@ if (found !== -1) {
     secretMessage[found] = "right";
 }
 console.log(secretMessage);
-
 
 // Utiliser une méthode pour supprimer le premier élément du tableau.
 let deleteTheFirstValue = secretMessage.shift();
